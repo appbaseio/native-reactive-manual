@@ -1,0 +1,45 @@
+- title: Advanced
+  items:
+    - id: reactivecomponent
+      title: Reactive Component
+      href: /advanced/reactivecomponent.html
+      forceInternal: true
+      subitems:
+        - id: usage
+          title: Usage
+          href: /advanced/reactivecomponent.html#usage
+          forceInternal: true
+        - id: props
+          title: Props
+          href: /advanced/reactivecomponent.html#props
+          forceInternal: true
+        - id: examples
+          title: Examples
+          href: /advanced/reactivecomponent.html#examples
+          forceInternal: true
+    - id: themes
+      title: Themes
+      href: /advanced/themes.html
+      forceInternal: true
+      subitems:
+        - id: usage
+          title: Usage
+          href: /advanced/themes.html#usage
+          forceInternal: true
+        - id: examples
+          title: Examples
+          href: /advanced/themes.html#examples
+          forceInternal: true
+    - id: style
+      title: Style
+      href: /advanced/style.html
+      forceInternal: true
+      subitems:
+        - id: usage
+          title: Usage
+          href: /advanced/style.html#usage
+          forceInternal: true
+        - id: examples
+          title: Examples
+          href: /advanced/style.html#examples
+          forceInternal: true
