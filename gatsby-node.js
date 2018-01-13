@@ -66,6 +66,7 @@ exports.createPages = async ({graphql, boundActionCreators}) => {
       slug.includes('contributing/') ||
       slug.includes('docs/') ||
       slug.includes('getting-started/') ||
+      slug.includes('components/') ||
       slug.includes('base-components/') ||
       slug.includes('list-components/') ||
       slug.includes('range-components/') ||
@@ -73,7 +74,6 @@ exports.createPages = async ({graphql, boundActionCreators}) => {
       slug.includes('result-components/') ||
       slug.includes('theming/') ||
       slug.includes('advanced/') ||
-      slug.includes('map-components/') ||
       slug.includes('warnings/')
     ) {
       let template;
@@ -84,6 +84,7 @@ exports.createPages = async ({graphql, boundActionCreators}) => {
       } else if (
         slug.includes('contributing/') ||
         slug.includes('docs/') ||
+        slug.includes('components/') ||
         slug.includes('base-components/') ||
         slug.includes('list-components/') ||
         slug.includes('range-components/') ||
@@ -91,7 +92,6 @@ exports.createPages = async ({graphql, boundActionCreators}) => {
         slug.includes('result-components/') ||
         slug.includes('theming/') ||
         slug.includes('advanced/') ||
-        slug.includes('map-components/') ||
         slug.includes('warnings/')
       ) {
         template = docsTemplate;

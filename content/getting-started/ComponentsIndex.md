@@ -10,7 +10,6 @@ next: components/textfield.html
 nextTitle: "TextField"
 redirect_from:
     - "componentsindex"
-    - "components"
 ---
 
 **ReactiveSearch** provides React UI components for Elasticsearch. This document explains the different kinds of components offered by the library and walks throughs scenarios of when to use which component.
