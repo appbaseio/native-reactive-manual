@@ -75,4 +75,4 @@ http.cors.allow-headers: X-Requested-With, X-Auth-Token, Content-Type, Content-L
 
 Once you have added the **ReactiveBase** component, you can get started with adding [other components](/components/) as its children.
 
-You can read more about when to use which components in the overview guide [here](/getting-started/ComponentsIndex.html).
+You can read more about when to use which components in the overview guide [here](/getting-started/componentsindex.html).

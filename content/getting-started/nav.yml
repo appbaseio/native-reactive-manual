@@ -5,9 +5,9 @@
       href: /getting-started/reactivesearch.html
       forceInternal: true
       subitems:
-        - id: step-0-install-reactivesearch
-          title: Install ReactiveSearch
-          href: /getting-started/reactivesearch.html#step-0-install-reactivesearch
+        - id: step-0-install-reactivesearch-native
+          title: Install ReactiveSearch Native
+          href: /getting-started/reactivesearch.html#step-0-install-reactivesearch-native
           forceInternal: true
         - id: step-1-create-boilerplate-with-crna
           title: Create Boilerplate with CRNA
@@ -17,13 +17,9 @@
           title: Adding the First Component
           href: /getting-started/reactivesearch.html#step-2-adding-the-first-component
           forceInternal: true
-        - id: step-3-adding-filters-and-result-components
-          title: Adding Filters and Result Components
-          href: /getting-started/reactivesearch.html#step-3-adding-filters-and-result-components
-          forceInternal: true
-        - id: step-4-adding-a-layout-grid-with-flex
-          title: "Adding a Layout Grid with Flex"
-          href: /getting-started/reactivesearch.html#step-4-adding-a-layout-grid-with-flex
+        - id: step-3-adding-filter-and-result-components
+          title: Adding Filter and Result Components
+          href: /getting-started/reactivesearch.html#step-3-adding-filter-and-result-components
           forceInternal: true
     - id: data
       title: Importing Data
