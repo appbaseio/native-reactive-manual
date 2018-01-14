@@ -48,7 +48,7 @@ const Footer = ({layoutHasSidebar = false}) => (
             <FooterLink to="/components/textfield.html">
               Components
             </FooterLink>
-            <FooterLink to="/advanced/customquery.html">
+            <FooterLink to="/advanced/reactivecomponent.html">
               Advanced
             </FooterLink>
           </FooterNav>

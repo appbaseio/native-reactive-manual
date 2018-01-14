@@ -165,7 +165,7 @@ class Header extends Component {
               <HeaderLink
                 isActive={location.pathname.includes('/advanced/')}
                 title="Advanced"
-                to="/advanced/customquery.html"
+                to="/advanced/reactivecomponent.html"
               />
             </nav>
             {location.pathname !== '/' && location.pathname !== '/native-reactive-manual/' && !this.state.showSearch && (

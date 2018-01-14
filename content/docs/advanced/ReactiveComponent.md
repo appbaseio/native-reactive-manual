@@ -9,6 +9,7 @@ prevTitle: "React Prop"
 next: advanced/writingdata.html
 nextTitle: "Writing Data"
 redirect_from:
+    - "advanced"
     - "advanced/reactivecomponent"
     - "reactivecomponent"
 ---
