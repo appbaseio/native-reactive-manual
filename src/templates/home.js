@@ -91,7 +91,7 @@ class Home extends Component {
                   },
                 }}
               >
-                <SearchBox prefixSlash={location.pathname.includes('/reactive-manual/')} />
+                <SearchBox prefixSlash={location.pathname.includes('/native-reactive-manual/')} />
               </Flex>
               <Flex
                 valign="center"

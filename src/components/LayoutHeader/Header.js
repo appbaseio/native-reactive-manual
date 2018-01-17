@@ -184,7 +184,7 @@ class Header extends Component {
                   },
                 }}
               >
-                <SearchBox handleBlur={this.toggleSearch} prefixSlash={location.pathname.includes('/reactive-manual/')} />
+                <SearchBox handleBlur={this.toggleSearch} prefixSlash={location.pathname.includes('/native-reactive-manual/')} />
               </div>
             }
           </div>
