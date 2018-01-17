@@ -27,7 +27,7 @@ const Blog = ({data, location}) => (
     ogDescription={data.markdownRemark.excerpt}
     markdownRemark={data.markdownRemark}
     sectionList={toSectionList(data.allMarkdownRemark)}
-    titlePostfix=" - Reactive Manual Blog"
+    titlePostfix=" - Reactive Manual Native Blog"
   />
 );
 
