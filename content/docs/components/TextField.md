@@ -4,8 +4,8 @@ title: "TextField"
 layout: docs
 sectionid: docs
 permalink: components/textfield.html
-next: components/togglebutton.html
-nextTitle: "ToggleButton"
+next: components/datasearch.html
+nextTitle: "DataSearch"
 redirect_from:
     - 'docs'
     - 'components'
@@ -47,7 +47,7 @@ redirect_from:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     data field to be connected to the component's UI view.
-- **defaultSelected** `Number` [optional]  
+- **defaultSelected** `String` [optional]  
     preset some value in the text field.
 - **placeholder** `String` [optional]  
     placeholder to be displayed in the text field when it has no value.

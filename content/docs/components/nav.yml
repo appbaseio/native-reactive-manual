@@ -21,6 +21,27 @@
           title: Extending
           href: /components/textfield.html#extending
           forceInternal: true
+    - id: datasearch
+      title: DataSearch
+      href: /components/datasearch.html
+      forceInternal: true
+      subitems:
+        - id: usage
+          title: Usage
+          href: /components/datasearch.html#usage
+          forceInternal: true
+        - id: props
+          title: Props
+          href: /components/datasearch.html#props
+          forceInternal: true
+        - id: styles
+          title: Styles
+          href: /components/datasearch.html#styles
+          forceInternal: true
+        - id: extending
+          title: Extending
+          href: /components/datasearch.html#extending
+          forceInternal: true
     - id: singledropdownlist
       title: SingleDropdownList
       href: /components/singledropdownlist.html
@@ -78,35 +99,6 @@
         - id: examples
           title: Examples
           href: /components/singledropdownrange.html#examples
-          forceInternal: true
-    - id: datasearch
-      title: DataSearch
-      href: /components/datasearch.html
-      forceInternal: true
-      subitems:
-        - id: usage
-          title: Usage
-          href: /components/datasearch.html#usage
-          forceInternal: true
-        - id: props
-          title: Props
-          href: /components/datasearch.html#props
-          forceInternal: true
-        - id: demo
-          title: Demo
-          href: /components/datasearch.html#demo
-          forceInternal: true
-        - id: styles
-          title: Styles
-          href: /components/datasearch.html#styles
-          forceInternal: true
-        - id: extending
-          title: Extending
-          href: /components/datasearch.html#extending
-          forceInternal: true
-        - id: examples
-          title: Examples
-          href: /components/datasearch.html#examples
           forceInternal: true
     - id: reactivelist
       title: ReactiveList
