@@ -55,10 +55,6 @@
           title: Props
           href: /components/singledropdownlist.html#props
           forceInternal: true
-        - id: demo
-          title: Demo
-          href: /components/singledropdownlist.html#demo
-          forceInternal: true
         - id: styles
           title: Styles
           href: /components/singledropdownlist.html#styles
@@ -66,10 +62,6 @@
         - id: extending
           title: Extending
           href: /components/singledropdownlist.html#extending
-          forceInternal: true
-        - id: examples
-          title: Examples
-          href: /components/singledropdownlist.html#examples
           forceInternal: true
     - id: singledropdownrange
       title: SingleDropdownRange
