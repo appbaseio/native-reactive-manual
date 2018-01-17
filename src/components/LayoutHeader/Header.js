@@ -148,7 +148,7 @@ class Header extends Component {
                 },
               }}>
               <HeaderLink
-                isActive={location.pathname === '/' || location.pathname === '/reactive-manual/' || location.pathname === '/reactive-manual'}
+                isActive={location.pathname === '/' || location.pathname === '/native-reactive-manual/' || location.pathname === '/reactive-manual'}
                 title="Home"
                 to="/"
               />
