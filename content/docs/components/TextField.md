@@ -14,9 +14,9 @@ redirect_from:
     - 'textfield'
 ---
 
-![Image to be displayed](https://i.imgur.com/rdankwu.png)
+![Image to be displayed](https://imgur.com/goOcLdF.png)
 
-`TextField` creates a simple text input field component that is optionally data connected. It can be further extended by specifying a user defined query on the input data.
+`TextField` creates a simple text input field component connected to data. It can be further extended by specifying a user defined query on the input data.
 
 ## Usage
 
@@ -35,12 +35,9 @@ redirect_from:
 <TextField
   componentId="NameTextSensor"
   dataField="name"
-  title="TextField"
   defaultSelected="volvo"
   placeholder="Type a car name"
-  showFilter={true}
-  filterLabel="Car"
-  URLParams={false}
+  debounce={300}
 />
 ```
 
@@ -50,52 +47,27 @@ redirect_from:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     data field to be connected to the component's UI view.
-- **title** `String or HTML` [optional]  
-    title of the component to be shown in the UI.
 - **defaultSelected** `Number` [optional]  
     preset some value in the text field.
 - **placeholder** `String` [optional]  
     placeholder to be displayed in the text field when it has no value.
-- **showFilter** `Boolean` [optional]  
-    show as filter when a value is selected in a global selected filters view. Defaults to `true`.
-- **filterLabel** `String` [optional]  
-    An optional label to display for the component in the global selected filters view. This is only applicable if `showFilter` is enabled. Default value used here is `componentId`.
-- **URLParams** `Boolean` [optional]  
-    enable creating a URL query string parameter based on the selected value of the text field. This is useful for sharing URLs with the component state. Defaults to `false`.
-
-## Demo
-
-<br />
-
-<iframe src="https://codesandbox.io/embed/github/appbaseio/reactivesearch/tree/dev/packages/web/examples/TextField" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+- **debounce** `Number` [optional]
+    delays executing the query by the specified time in **ms** while the user is typing. Defaults to `0`, i.e. no debounce. Useful if you want to save on the number of requests sent.
 
 ## Styles
 
-`TextField` component supports `innerClass` prop with the following keys:    
-
-- title
-- input
-
-Read more about it [here](/theming/class.html).
+`TextField` component supports `style` prop. Read more about it [here](/advanced/style.html).
 
 ## Extending
 
 `TextField` component can be extended to
-1. customize the look and feel with `className`, `style`,
+1. customize the look and feel with `style`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange`, `onValueChange` and `onQueryChange`,
-4. add the following [synthetic events](https://reactjs.org/events.html) to the underlying `input` element:
-    - onBlur
-    - onFocus
-    - onKeyPress
-    - onKeyDown
-    - onKeyUp
-    - autoFocus
 
 ```js
 <TextField
   ...
-  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value, props) {
@@ -134,8 +106,6 @@ Read more about it [here](/theming/class.html).
 />
 ```
 
-- **className** `String`  
-    CSS class to be injected on the component container.
 - **style** `Object`
     CSS styles to be applied to the **TextField** component.
 - **customQuery** `Function`
@@ -147,7 +117,3 @@ Read more about it [here](/theming/class.html).
     is a callback function which accepts component's current **value** as a parameter. It is called everytime the component's value changes. This prop is handy in cases where you want to generate a side-effect on value selection. For example: You want to show a pop-up modal with the valid discount coupon code when a user searches for something in the TextField.
 - **onQueryChange** `Function`  
     is a callback function which accepts component's **prevQuery** and **nextQuery** as parameters. It is called everytime the component's query changes. This prop is handy in cases where you want to generate a side-effect whenever the component's query would change.
-
-## Examples
-
-<a href="https://opensource.appbase.io/playground/?selectedKind=Base%20components%2FTextField" target="_blank">TextField with default props</a>
