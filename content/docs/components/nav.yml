@@ -97,10 +97,6 @@
           title: Props
           href: /components/reactivelist.html#props
           forceInternal: true
-        - id: demo
-          title: Demo
-          href: /components/reactivelist.html#demo
-          forceInternal: true
         - id: styles
           title: Styles
           href: /components/reactivelist.html#styles
@@ -108,8 +104,4 @@
         - id: extending
           title: Extending
           href: /components/reactivelist.html#extending
-          forceInternal: true
-        - id: examples
-          title: Examples
-          href: /components/reactivelist.html#examples
           forceInternal: true
