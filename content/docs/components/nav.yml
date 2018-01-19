@@ -76,10 +76,6 @@
           title: Props
           href: /components/singledropdownrange.html#props
           forceInternal: true
-        - id: demo
-          title: Demo
-          href: /components/singledropdownrange.html#demo
-          forceInternal: true
         - id: styles
           title: Styles
           href: /components/singledropdownrange.html#styles
@@ -87,10 +83,6 @@
         - id: extending
           title: Extending
           href: /components/singledropdownrange.html#extending
-          forceInternal: true
-        - id: examples
-          title: Examples
-          href: /components/singledropdownrange.html#examples
           forceInternal: true
     - id: reactivelist
       title: ReactiveList
