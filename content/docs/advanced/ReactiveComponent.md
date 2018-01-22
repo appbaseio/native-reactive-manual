@@ -6,8 +6,8 @@ sectionid: reactivecomponent
 permalink: advanced/reactivecomponent.html
 prev: components/reactivelist.html
 prevTitle: "ReactiveList"
-next: advanced/writingdata.html
-nextTitle: "Writing Data"
+next: advanced/performance.html
+nextTitle: "Performance Tips"
 redirect_from:
     - "advanced"
     - "advanced/reactivecomponent"
