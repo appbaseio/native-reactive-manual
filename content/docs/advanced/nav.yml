@@ -17,18 +17,18 @@
           title: Examples
           href: /advanced/reactivecomponent.html#examples
           forceInternal: true
-    - id: themes
-      title: Themes
-      href: /advanced/themes.html
+    - id: performance
+      title: Performance
+      href: /advanced/performance.html
       forceInternal: true
       subitems:
-        - id: usage
-          title: Usage
-          href: /advanced/themes.html#usage
+        - id: concepts
+          title: Concepts
+          href: /advanced/performance.html#concepts
           forceInternal: true
         - id: examples
           title: Examples
-          href: /advanced/themes.html#examples
+          href: /advanced/performance.html#examples
           forceInternal: true
     - id: style
       title: Style
@@ -42,4 +42,17 @@
         - id: examples
           title: Examples
           href: /advanced/style.html#examples
+          forceInternal: true
+    - id: build
+      title: Building with Native Code
+      href: /advanced/build.html
+      forceInternal: true
+      subitems:
+        - id: usage
+          title: Usage
+          href: /advanced/build.html#usage
+          forceInternal: true
+        - id: examples
+          title: Examples
+          href: /advanced/build.html#examples
           forceInternal: true
