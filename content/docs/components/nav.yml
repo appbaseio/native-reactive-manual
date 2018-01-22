@@ -84,6 +84,48 @@
           title: Extending
           href: /components/singledropdownrange.html#extending
           forceInternal: true
+    - id: datepicker
+      title: DatePicker
+      href: /components/datepicker.html
+      forceInternal: true
+      subitems:
+        - id: usage
+          title: Usage
+          href: /components/datepicker.html#usage
+          forceInternal: true
+        - id: props
+          title: Props
+          href: /components/datepicker.html#props
+          forceInternal: true
+        - id: styles
+          title: Styles
+          href: /components/datepicker.html#styles
+          forceInternal: true
+        - id: extending
+          title: Extending
+          href: /components/datepicker.html#extending
+          forceInternal: true
+    - id: daterange
+      title: DateRange
+      href: /components/daterange.html
+      forceInternal: true
+      subitems:
+        - id: usage
+          title: Usage
+          href: /components/daterange.html#usage
+          forceInternal: true
+        - id: props
+          title: Props
+          href: /components/daterange.html#props
+          forceInternal: true
+        - id: styles
+          title: Styles
+          href: /components/daterange.html#styles
+          forceInternal: true
+        - id: extending
+          title: Extending
+          href: /components/daterange.html#extending
+          forceInternal: true
     - id: reactivelist
       title: ReactiveList
       href: /components/reactivelist.html
