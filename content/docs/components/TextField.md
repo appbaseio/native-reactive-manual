@@ -54,6 +54,10 @@ redirect_from:
 - **debounce** `Number` [optional]
     delays executing the query by the specified time in **ms** while the user is typing. Defaults to `0`, i.e. no debounce. Useful if you want to save on the number of requests sent.
 
+## Demo
+
+[Try the demo](https://expo.io/@dhruvdutt/textfield-demo) instantly.
+
 ## Styles
 
 `TextField` component supports `style` prop. Read more about it [here](/advanced/style.html).

@@ -68,6 +68,10 @@ Example uses:
 - **placeholder** `String` [optional]  
     placeholder to be displayed in the dropdown searchbox. Defaults to "Select a value".
 
+## Demo
+
+[Try the demo](https://expo.io/@dhruvdutt/singlerange-demo) instantly.
+
 ## Styles
 
 `SingleDropdownRange` component supports `style` prop. Read more about it [here](/advanced/style.html).

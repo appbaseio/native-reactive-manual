@@ -13,6 +13,10 @@
           title: Props
           href: /components/textfield.html#props
           forceInternal: true
+        - id: demo
+          title: Demo
+          href: /components/textfield.html#demo
+          forceInternal: true
         - id: styles
           title: Styles
           href: /components/textfield.html#styles
@@ -33,6 +37,10 @@
         - id: props
           title: Props
           href: /components/datasearch.html#props
+          forceInternal: true
+        - id: demo
+          title: Demo
+          href: /components/datasearch.html#demo
           forceInternal: true
         - id: styles
           title: Styles
@@ -55,6 +63,10 @@
           title: Props
           href: /components/singledropdownlist.html#props
           forceInternal: true
+        - id: demo
+          title: Demo
+          href: /components/singledropdownlist.html#demo
+          forceInternal: true
         - id: styles
           title: Styles
           href: /components/singledropdownlist.html#styles
@@ -75,6 +87,10 @@
         - id: props
           title: Props
           href: /components/singledropdownrange.html#props
+          forceInternal: true
+        - id: demo
+          title: Demo
+          href: /components/singledropdownrange.html#demo
           forceInternal: true
         - id: styles
           title: Styles
@@ -97,6 +113,10 @@
           title: Props
           href: /components/datepicker.html#props
           forceInternal: true
+        - id: demo
+          title: Demo
+          href: /components/datepicker.html#demo
+          forceInternal: true
         - id: styles
           title: Styles
           href: /components/datepicker.html#styles
@@ -118,6 +138,10 @@
           title: Props
           href: /components/daterange.html#props
           forceInternal: true
+        - id: demo
+          title: Demo
+          href: /components/daterange.html#demo
+          forceInternal: true
         - id: styles
           title: Styles
           href: /components/daterange.html#styles
@@ -138,6 +162,10 @@
         - id: props
           title: Props
           href: /components/reactivelist.html#props
+          forceInternal: true
+        - id: demo
+          title: Demo
+          href: /components/reactivelist.html#demo
           forceInternal: true
         - id: styles
           title: Styles

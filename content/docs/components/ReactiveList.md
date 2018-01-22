@@ -99,6 +99,10 @@ Example uses:
 - **onAllData** `Function` [optional]  
     works like **onData** prop but all the data objects are passed to the callback function.
 
+## Demo
+
+[Try the demo](https://expo.io/@dhruvdutt/reactivelist-demo) instantly.
+
 ## Styles
 
 `ReactiveList` component supports `style` prop. Read more about it [here](/advanced/style.html).

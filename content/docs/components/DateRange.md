@@ -42,7 +42,7 @@ Example uses:
       start: "2017-01-17",
       end: "2017-01-23"
   }}
-  startDate="2017-01-01"
+  initialMonth="2017-01-01"
   queryFormat="date"
   placeholder="Pick date"
 />
@@ -56,7 +56,7 @@ Example uses:
     data field to be connected to the component's UI view.
 - **defaultSelected** `Object` [optional]  
     pre-selects a date range. Accepts the `start` and `end` key with `String` values.
-- **startDate** `String` [optional]  
+- **initialMonth** `String` [optional]  
     starts the calendar view from the specified month.
 - **placeholder** `String` [optional]  
     placeholder to be displayed in the dropdown searchbox. Defaults to "Select a date".
@@ -76,6 +76,8 @@ Example uses:
 | `basic_date_time` | `yyyyMMdd'T'HHmmss.SSSZ` |
 | `basic_date_time_no_millis` | `yyyyMMdd'T'HHmmssZ` |
 | `date_time_no_millis` | `yyyy-MM-dd'T'HH:mm:ssZZ` |
+
+## Demo
 
 ## Styles
 

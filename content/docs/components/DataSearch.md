@@ -83,6 +83,16 @@ Example uses:
 - **debounce** `Number` [optional]
     delays executing the query by the specified time in **ms** while the user is typing. Defaults to `0`, i.e. no debounce. Useful if you want to save on the number of requests sent.
 
+## Demo
+
+[Try the demo](https://expo.io/@dhruvdutt/datasearch-demo) instantly on expo or check it out on appetize below:
+
+<br />
+
+<iframe frameborder="0" scrolling="no" src="https://appetize.io/embed/pe6y824c9n5a8kf9ecpe1phbtr?device=nexus5&scale=75&orientation=portrait&osVersion=7.1" height="600px"></iframe>
+
+<br />
+
 ## Styles
 
 `DataSearch` component supports `style` prop. Read more about it [here](/advanced/style.html).

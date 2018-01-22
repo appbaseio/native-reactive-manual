@@ -39,7 +39,7 @@ Example uses:
   componentId="DateSensor"
   dataField="mtime"
   defaultSelected="2017-04-01"
-  startDate="2017-04-01"
+  initialMonth="2017-04-01"
   queryFormat="date"
   placeholder="Pick date"
 />
@@ -53,7 +53,7 @@ Example uses:
     data field to be connected to the component's UI view.
 - **defaultSelected** `String` [optional]  
     pre-selects a date.
-- **startDate** `String` [optional]  
+- **initialMonth** `String` [optional]  
     starts the calendar view from the specified month.
 - **placeholder** `String` [optional]  
     placeholder to be displayed in the dropdown searchbox. Defaults to "Select a date".
@@ -73,6 +73,8 @@ Example uses:
 | `basic_date_time` | `yyyyMMdd'T'HHmmss.SSSZ` |
 | `basic_date_time_no_millis` | `yyyyMMdd'T'HHmmssZ` |
 | `date_time_no_millis` | `yyyy-MM-dd'T'HH:mm:ssZZ` |
+
+## Demo
 
 ## Styles
 

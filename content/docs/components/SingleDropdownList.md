@@ -69,6 +69,10 @@ Example uses:
 - **selectAllLabel** `String` [optional]  
     if provided, shows an extra option to select all the options in the list with the provided string value.
 
+## Demo
+
+[Try the demo](https://expo.io/@dhruvdutt/singlelist-demo) instantly.
+
 ## Styles
 
 `SingleDropdownList` component supports `style` prop. Read more about it [here](/advanced/style.html).
