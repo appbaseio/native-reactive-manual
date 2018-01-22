@@ -4,8 +4,8 @@ title: "ReactiveList"
 layout: docs
 sectionid: docs
 permalink: components/reactivelist.html
-prev: components/singledropdownrange.html
-prevTitle: "SingleDropdownRange"
+prev: components/daterange.html
+prevTitle: "DateRange"
 next: advanced/reactivecomponent.html
 nextTitle: "ReactiveComponent"
 redirect_from:

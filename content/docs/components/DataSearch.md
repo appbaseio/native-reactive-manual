@@ -98,7 +98,7 @@ Example uses:
 ```js
 <DataSearch
   ...
-  style={{"paddingBottom": "10px"}}
+  style={{ paddingBottom: 10 }}
   customQuery={
     function(value, props) {
       return {

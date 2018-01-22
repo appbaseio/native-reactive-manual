@@ -6,8 +6,8 @@ sectionid: docs
 permalink: components/singledropdownrange.html
 prev: components/singledropdownlist.html
 prevTitle: "SingleDropdownList"
-next: components/reactivelist.html
-nextTitle: "ReactiveList"
+next: components/datepicker.html
+nextTitle: "DatePicker"
 redirect_from:
     - 'components/singledropdownrange'
     - 'singledropdownrange'
@@ -82,7 +82,7 @@ Example uses:
 ```js
 <SingleDropdownRange
   ...
-  style={{"paddingBottom": "10px"}}
+  style={{ paddingBottom: 10 }}
   customQuery={
     function(value, props) {
       return {
