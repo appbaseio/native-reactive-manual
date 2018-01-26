@@ -15,17 +15,19 @@ redirect_from:
 
 ### Step 0: Install ReactiveSearch Native
 
-If you already have your project setup you can install [`reactivesearch-native`](https://www.npmjs.com/package/@appbaseio/reactivesearch-native) module using npm. Alternatively, you can start a new project following the next step.
+If you have an existing project, you can install [`reactivesearch-native`](https://www.npmjs.com/package/@appbaseio/reactivesearch-native) module using yarn or npm.
 
 ```bash
-npm install @appbaseio/reactivesearch-native
+yarn add @appbaseio/reactivesearch-native
 ```
 
 or
 
 ```bash
-yarn add @appbaseio/reactivesearch-native
+npm install @appbaseio/reactivesearch-native
 ```
+
+If you are starting from scratch, follow the next steps on getting started with reactivesearch-native.
 
 ### Step 1: Create Boilerplate with CRNA
 
@@ -35,16 +37,16 @@ We will create a search UI based on a *cars dataset* with ReactiveSearch compone
 
 **Caption:** Final image of how the app will look.
 
-We can either add ReactiveSearch to an existing app or create a boilerplate app with [Create React Native App (CRNA)](https://github.com/react-community/create-react-native-app). For this quickstart guide, we will use the CRNA with [Expo client](https://expo.io/tools#client).
+For this quickstart guide, we will use [Create React Native App (CRNA)](https://github.com/react-community/create-react-native-app) with [Expo client](https://expo.io/tools#client).
 
 ```bash
-create-react-native-app my-awesome-search && cd my-awesome-search
+create-react-native-app my-awesome-mobile-search && cd my-awesome-mobile-search
 ```
 
 Install the `@appbaseio/reactivesearch-native` repo.
 
 ```bash
-npm install @appbaseio/reactivesearch-native
+yarn add @appbaseio/reactivesearch-native
 ```
 
 ### Step 2: Adding the first component
