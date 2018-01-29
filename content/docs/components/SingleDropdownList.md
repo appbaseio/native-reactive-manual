@@ -6,8 +6,8 @@ sectionid: docs
 permalink: components/singledropdownlist.html
 prev: components/datasearch.html
 prevTitle: "DataSearch"
-next: components/singledropdownrange.html
-nextTitle: "SingleDropdownRange"
+next: components/multidropdownlist.html
+nextTitle: "MultiDropdownList"
 redirect_from:
     - 'components/singledropdownlist'
     - 'singledropdownlist'
@@ -55,7 +55,7 @@ Example uses:
 - **componentId** `String`  
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
-    data field to be connected to the component's UI view.
+    data field to be connected to the component's UI view. This field is used for doing an aggregation and returns the result. We're using a `.raw` multifield here. You can use a field of type `keyword` or `not_analyzed` depending on your Elasticsearch cluster.
 - **defaultSelected** `string` [optional]  
     default selected value pre-selects an option from the list.
 - **placeholder** `String` [optional]  

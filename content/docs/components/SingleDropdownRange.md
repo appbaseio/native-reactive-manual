@@ -4,10 +4,10 @@ title: "SingleDropdownRange"
 layout: docs
 sectionid: docs
 permalink: components/singledropdownrange.html
-prev: components/singledropdownlist.html
-prevTitle: "SingleDropdownList"
-next: components/datepicker.html
-nextTitle: "DatePicker"
+prev: components/multidropdownlist.html
+prevTitle: "MultiDropdownList"
+next: components/multidropdownrange.html
+nextTitle: "MultiDropdownRange"
 redirect_from:
     - 'components/singledropdownrange'
     - 'singledropdownrange'

@@ -75,6 +75,31 @@
           title: Extending
           href: /components/singledropdownlist.html#extending
           forceInternal: true
+    - id: multidropdownlist
+      title: MultiDropdownList
+      href: /components/multidropdownlist.html
+      forceInternal: true
+      subitems:
+        - id: usage
+          title: Usage
+          href: /components/multidropdownlist.html#usage
+          forceInternal: true
+        - id: props
+          title: Props
+          href: /components/multidropdownlist.html#props
+          forceInternal: true
+        - id: demo
+          title: Demo
+          href: /components/multidropdownlist.html#demo
+          forceInternal: true
+        - id: styles
+          title: Styles
+          href: /components/multidropdownlist.html#styles
+          forceInternal: true
+        - id: extending
+          title: Extending
+          href: /components/multidropdownlist.html#extending
+          forceInternal: true
     - id: singledropdownrange
       title: SingleDropdownRange
       href: /components/singledropdownrange.html
@@ -99,6 +124,31 @@
         - id: extending
           title: Extending
           href: /components/singledropdownrange.html#extending
+          forceInternal: true
+    - id: multidropdownrange
+      title: MultiDropdownRange
+      href: /components/multidropdownrange.html
+      forceInternal: true
+      subitems:
+        - id: usage
+          title: Usage
+          href: /components/multidropdownrange.html#usage
+          forceInternal: true
+        - id: props
+          title: Props
+          href: /components/multidropdownrange.html#props
+          forceInternal: true
+        - id: demo
+          title: Demo
+          href: /components/multidropdownrange.html#demo
+          forceInternal: true
+        - id: styles
+          title: Styles
+          href: /components/multidropdownrange.html#styles
+          forceInternal: true
+        - id: extending
+          title: Extending
+          href: /components/multidropdownrange.html#extending
           forceInternal: true
     - id: datepicker
       title: DatePicker
