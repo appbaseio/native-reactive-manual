@@ -31,9 +31,9 @@ If you are starting from scratch, follow the next steps on getting started with 
 
 ### Step 1: Create Boilerplate with CRNA
 
-We will create a search UI based on a *cars dataset* with ReactiveSearch components.
+We will create a search UI based on a *books dataset* with ReactiveSearch components.
 
-![Image](https://imgur.com/uKVq6EN.png)
+![Image](https://imgur.com/zAXd5uQ.png)
 
 **Caption:** Final image of how the app will look.
 
@@ -57,7 +57,7 @@ We will demonstrate creating an index using [appbase.io](https://appbase.io) ser
 
 ![create an appbase.io app](https://i.imgur.com/r6hWKAG.gif)
 
-**Caption:** For the example that we will build, the app is called **car-store** and the associated read-only credentials are **cf7QByt5e:d2d60548-82a9-43cc-8b40-93cbbe75c34c**. You can browse and clone the dataset into your own app from  [here](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAAJrAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsta-jK5IyCHPDQHd0vFqnW3IIPckWf81EYz6c9_C1aGQkSbGptS4zcGd_lZI2UVGi7gEHVqkGAZzrbpw4o5m3TwqV4NeFg28vpiRpym93H_qNV7y_gPH___dHIAA).
+**Caption:** For the example that we will build, the app is called **good-books-ds** and the associated read-only credentials are **nY6NNTZZ6:27b76b9f-18ea-456c-bc5e-3a5263ebc63d**. You can browse and clone the dataset into your own app from  [here](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAAKJAQAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsyzhBoa6J5YHVVPvvStg3duFL_9lBQxNAUEiS2LxrmQIi48IYsLycilGizdEqIf-Z3FUOIdIqHULMVrBqKtL5qUJx1gsOpt0WbuAhQS8qMoK8IdlqoG0tr-8UHi3sau8zMqY64fzpXCehrrPI4SNk8VTbiMsIZhduWAX4hCATwCBWfvrJqfAoiqKGt9zyTfsxLU7CbxGxE6__je7GeiC7UaPdD8YDeYC7eRxv-8JF1j3ysqY_Lkqc6hZAtUm9dN1Mg7O2uJ1MJxZyZWCmnz3ovLxz81T3C6KJZXI0OFjB5ll22UJm0iEaxN9NgY8yT9XOuK1k_90Fp4A).
 
 Lets update our `src/App.js` file to add ReactiveBase component.
 
@@ -70,8 +70,8 @@ export default class App extends React.Component {
   render() {
     return (
       <ReactiveBase
-        app="car-store"
-        credentials="cf7QByt5e:d2d60548-82a9-43cc-8b40-93cbbe75c34c"
+        app="good-books-ds"
+        credentials="nY6NNTZZ6:27b76b9f-18ea-456c-bc5e-3a5263ebc63d"
       >
         <View style={styles.container}>
             <Text>Hello ReactiveSearch!</Text>
@@ -96,41 +96,46 @@ This is how the app should look after running the `yarn start` command.
 
 ### Step 3: Adding Filter and Result Components
 
-For this app, we will be using [TextField](/components/textfield.html) component for filtering the dataset and [ReactiveList](/components/reactivelist.html) component for showing the search results.
+For this app, we will be using [DataSearch](/components/datasearch.html) component for filtering the dataset and [ReactiveList](/components/reactivelist.html) component for showing the search results.
 
 Lets add them within the ReactiveBase component. But before we do that, lets look at the important props for each.
 
 ```js
-<TextField
-	componentId="searchbox"
-	dataField="name"
-	placeholder="Search for cars"
+<DataSearch
+  componentId="searchbox"
+  dataField={[
+    'original_title',
+    'original_title.search',
+    'authors',
+    'authors.search',
+  ]}
+  placeholder="Search for books"
 />
 ```
 
-The [**TextField**](/components/textfield.html) component we describe above creates a searchbox UI component that queries on the `name` field in the dataset.
+The [**DataSearch**](/components/datasearch.html) component we describe above creates a searchbox UI component that queries on the specifield `dataField`(s) in the dataset.
 
 Next, we need a component to show the matching results. [**ReactiveList**](/components/reactivelist.html) does exactly this.
 
 ```js
 <ReactiveList
-	componentId="results"
-	dataField="name"
-	size={7}
-	showResultStats={false}
-	pagination={true}
-	react={{
-		and: "searchbox"
-	}}
-	onData={(res) => (
-		<View style={styles.result}>
-		<Image source={{ uri: 'https://bit.do/demoimg' }} style={styles.image} />
-		<View style={styles.item}>
-			<Text style={styles.title}>{res.name}</Text>
-			<Text>{res.brand + " " + "🌟".repeat(res.rating)}</Text>
-		</View>
-		</View>
-	)}
+  componentId="results"
+  dataField="original_title"
+  size={7}
+  showResultStats={false}
+  pagination={true}
+  react={{
+    and: "searchbox"
+  }}
+  onData={(res) => (
+    <View style={styles.result}>
+      <Image source={{ uri: res.image }} style={styles.image} />
+      <View style={styles.item}>
+        <Text style={styles.title}>{res.original_title}</Text>
+        <Text>{res.authors}</Text>
+      </View>
+    </View>
+  )}
 />
 ```
 
@@ -161,7 +166,7 @@ import {
 } from 'react-native';
 import {
   ReactiveBase,
-  TextField,
+  DataSearch,
   ReactiveList
 } from '@appbaseio/reactivebase-native';
 
@@ -194,19 +199,24 @@ export default class App extends React.Component {
 
     return (
       <ReactiveBase
-        app="car-store"
-        credentials="cf7QByt5e:d2d60548-82a9-43cc-8b40-93cbbe75c34c"
+        app="good-books-ds"
+        credentials="nY6NNTZZ6:27b76b9f-18ea-456c-bc5e-3a5263ebc63d"
       >
         <ScrollView>
           <View style={styles.container}>
-            <TextField
+            <DataSearch
               componentId="searchbox"
-              dataField="name"
-              placeholder="Search for cars"
+              dataField={[
+                'original_title',
+                'original_title.search',
+                'authors',
+                'authors.search',
+              ]}
+              placeholder="Search for books"
             />
             <ReactiveList
               componentId="results"
-              dataField="name"
+              dataField="original_title"
               size={7}
               showResultStats={false}
               pagination={true}
@@ -215,10 +225,10 @@ export default class App extends React.Component {
               }}
               onData={(res) => (
                 <View style={styles.result}>
-                  <Image source={{ uri: 'https://bit.do/demoimg' }} style={styles.image} />
+                  <Image source={{ uri: res.image }} style={styles.image} />
                   <View style={styles.item}>
-                    <Text style={styles.title}>{res.name}</Text>
-                    <Text>{res.brand + " " + "🌟".repeat(res.rating)}</Text>
+                    <Text style={styles.title}>{res.original_title}</Text>
+                    <Text>{res.authors}</Text>
                   </View>
                 </View>
               )}
@@ -257,7 +267,7 @@ const styles = StyleSheet.create({
 
 If you have followed along so far, you should be able to see the final app:  
 
-![Image](https://imgur.com/uKVq6EN.png)
+![Image](https://imgur.com/zAXd5uQ.png)
 
 In the next section we explain about **importing data**.
 
