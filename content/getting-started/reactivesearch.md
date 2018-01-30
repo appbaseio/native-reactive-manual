@@ -270,4 +270,3 @@ If you have followed along so far, you should be able to see the final app:
 ![Image](https://imgur.com/zAXd5uQ.png)
 
 In the next section we explain about **importing data**.
-
