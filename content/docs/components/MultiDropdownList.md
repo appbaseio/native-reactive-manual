@@ -10,6 +10,8 @@ next: components/singledropdownrange.html
 nextTitle: "SingleDropdownRange"
 redirect_from:
     - 'components/multidropdownlist'
+    - 'base-components/multidropdownlist'
+    - 'list-components/multidropdownlist'
     - 'multidropdownlist'
 ---
 

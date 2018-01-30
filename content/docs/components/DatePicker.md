@@ -10,6 +10,8 @@ next: components/daterange.html
 nextTitle: "DateRange"
 redirect_from:
     - 'components/datepicker'
+    - 'base-components/datepicker'
+    - 'range-components/datepicker'
     - 'datepicker'
 ---
 

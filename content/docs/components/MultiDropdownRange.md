@@ -10,6 +10,8 @@ next: components/datepicker.html
 nextTitle: "DatePicker"
 redirect_from:
     - 'components/multidropdownrange'
+    - 'base-components/multidropdownrange'
+    - 'range-components/multidropdownrange'
     - 'multidropdownrange'
 ---
 

@@ -10,6 +10,8 @@ next: components/singledropdownlist.html
 nextTitle: "SingleDropdownList"
 redirect_from:
     - 'components/datasearch'
+    - 'base-components/datasearch'
+    - 'search-components/datasearch'
     - 'datasearch'
 ---
 

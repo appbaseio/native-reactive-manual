@@ -10,6 +10,8 @@ next: advanced/reactivecomponent.html
 nextTitle: "ReactiveComponent"
 redirect_from:
     - 'components/reactivelist'
+    - 'base-components/reactivelist'
+    - 'result-components/reactivelist'
     - 'reactivelist'
 ---
 

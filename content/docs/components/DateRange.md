@@ -10,6 +10,8 @@ next: components/reactivelist.html
 nextTitle: "ReactiveList"
 redirect_from:
     - 'components/daterange'
+    - 'base-components/daterange'
+    - 'range-components/daterange'
     - 'daterange'
 ---
 
